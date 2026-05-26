@@ -69,7 +69,8 @@ This package contains the text manuals, comprehensive FAQ and system man pages f
 
 
 %prep
-%setup -q -n %{name}-%{version}-src/irssi
+## %%setup -q -n %{name}-%{version}/irssi
+%setup -q -n %{name}-%{version}
 
 
 %build
