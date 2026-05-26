@@ -7,7 +7,7 @@ Group:          Productivity/Networking/IRC
 URL:            http://www.irssi.org
 Distribution:   SailfishOS
 Packager:       Peter Leinchen (for SFOS) <peterleinchen@t-online.de>
-Source0:        https://github.com/irssi/irssi/releases/download/%{version}/irssi-%{version}.tar.xz
+Source0:        https://github.com/irssi/irssi/releases/download/%{version}/irssi-%{version}.tar.xz#/%{version}/irssi-%{version}-src.tar.xz
 ## Source1:        https://github.com/peterleinchen/irssi
 ## Source2:         irssi-%%{version}.tar.xz
 BuildRequires:  gcc
