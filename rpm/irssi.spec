@@ -8,8 +8,7 @@ URL:            http://www.irssi.org
 Distribution:   SailfishOS
 Packager:       Peter Leinchen (for SFOS) <peterleinchen@t-online.de>
 Source0:        https://github.com/irssi/irssi/releases/download/%{version}/irssi-%{version}.tar.xz#/%{version}/irssi-%{version}-src.tar.xz
-## Source1:        https://github.com/peterleinchen/irssi
-## Source2:         irssi-%%{version}.tar.xz
+## Source:         irssi-%%{version}.tar.xz
 BuildRequires:  gcc
 BuildRequires:  meson
 BuildRequires:  pkgconfig
@@ -25,7 +24,7 @@ specific, so other UIs could be created easily. Also, Irssi is not
 really even IRC specific anymore. There are already working SILC and
 ICB modules available. Support for other protocols, like ICQ and
 Jabber, could be added some day, too.
-​
+
 It is the code that separates Irssi from ircII, BitchX, epic, and the
 rest of the text clients. It is not using the ircII code.
 
@@ -35,7 +34,7 @@ Type: console-application
 PackagedBy: peterleinchen
 Custom:
   Repo: https://codeberg.org/irssi/irssi
-  PackagingRepo: https://github.com/peterleinchen/irssi
+  PackagingRepo: https://github.com/peterleinchen/irssi-code
 PackageIcon: https://codeberg.org/repo-avatars/50076-0df574274780a2044751384f596a2cb9
 Links:
   Homepage: %{url}
