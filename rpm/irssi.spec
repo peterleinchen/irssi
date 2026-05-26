@@ -115,4 +115,3 @@ This package contains the text manuals, comprehensive FAQ and system man pages f
 
 
 %changelog
-​
