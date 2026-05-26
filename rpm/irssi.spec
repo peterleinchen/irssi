@@ -35,7 +35,7 @@ Type: console-application
 PackagedBy: peterleinchen
 Custom:
   Repo: https://codeberg.org/irssi/irssi
-  PackagingRepo: https://github.com/szopin/irssi
+  PackagingRepo: https://github.com/peterleinchen/irssi
 PackageIcon: https://codeberg.org/repo-avatars/50076-0df574274780a2044751384f596a2cb9
 Links:
   Homepage: %{url}
@@ -58,6 +58,17 @@ Summary:    Perl package for irssi.
 Irssi perl library
 %endif
 ​
+
+%package doc
+Summary:    Documentation, FAQ and manuals for the irssi client.
+Group:      Documentation
+Requires:   %{name} = %{version}-%{release}
+
+
+%description doc
+This package contains the text manuals, comprehensive FAQ and system man pages for the irssi client..
+
+
 %prep
 %setup -q -n %{name}-%{version}/irssi
 ​
@@ -72,9 +83,9 @@ Irssi perl library
 ​
 
 %files
+%doc README.md NEWS TODO COPYING
 #%%config(noreplace) %%{_sysconfdir}/irssi.conf
 %{_bindir}/irssi
-%doc /usr/share/doc/irssi/*
 # scripts & themes
 %dir %{_datadir}/%{name}
 %{_datadir}/%{name}/*
@@ -97,6 +108,10 @@ Irssi perl library
 #%%perl_archlib/*/auto/Irssi/.packlist
 #%%perl_archlib/*/perllocal.pod
 %endif
+
+
+%files doc
+%doc /usr/share/doc/irssi/*
 
 
 %changelog
