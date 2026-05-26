@@ -1,2 +1,2 @@
 # irssi
-The IRC client of the future - SFOS   ---   https://irssi.org
+The IRC client of the future - https://irssi.org   ---   SFOS
